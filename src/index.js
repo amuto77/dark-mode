@@ -9,7 +9,7 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [darkMode, setDarkMode] = useDarkMode();
+  const [darkMode, setDarkMode] = useDarkMode("dark", false);
   useEffect(() => {
     axios
       .get(
